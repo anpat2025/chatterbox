@@ -1,11 +1,13 @@
 var path = require('path'),
     rootPath = path.normalize(__dirname + '/../..');
 
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 // Defaults that you can access when you require this config.
 var apiConfig = {
     root: rootPath,
-    port: parseInt(process.env.PORT, 10) || 3000,
-    ip: '0.0.0.0'
+    port: server_port,
+    ip: server_ip_address
 }
 
 
