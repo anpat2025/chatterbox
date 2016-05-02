@@ -14,5 +14,13 @@
     "hapi": "^13.3.0",
     "hapi-auth-cookie": "^6.1.1",
     "inert": "^3.2.0"
+  },
+ "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+"repository": {
+    "type": "git",
+    "url": "https://github.com/anpat2025/chatterbox.git"
   }
 }
